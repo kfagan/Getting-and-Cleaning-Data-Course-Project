@@ -71,4 +71,4 @@ final = activityNames %>% select(subjectId, activityType, timeBodyAccelerationMe
 tidy = final %>% group_by(activityType, subjectId) %>% summarise_all(mean)
 
 
-write.table(tidy, "GCDTidyData.txt", row.name=FALSE)
+write.table(tidy, "tidy.txt", row.name=FALSE)
